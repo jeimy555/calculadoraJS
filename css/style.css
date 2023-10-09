@@ -1,0 +1,68 @@
+*{
+margin: 0px;
+padding: 0px;
+/*el ancho dentro del relleno*/
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+:root {
+    --fondo: #b579f0;
+    --pantalla: #ffffff;
+    --btn: #f1d8ff;
+  }
+
+body {
+    background-color: #8233d1;
+display: flex;
+/*que se ajuste al porcentaje de la pantalla vh=view higth*/
+min-height: 100vh;
+justify-content: center;
+align-items: center;
+}
+.calculadora{
+display: grid;
+border-radius: 1rem;
+background-color: var(--fondo);
+grid-template-columns: repeat(4, 1fr);
+gap:0.5rem;
+width: 350px;
+padding: 1rem;
+}
+.boton{
+background-color: rgba(0, 0, 0, 0);
+color: #ffffff;
+font-size: 30px;
+border-radius: 0.4rem;
+border-color:  rgb(0, 0, 0);
+border-style: solid;
+padding: 0.5rem;
+}
+.pantalla{
+    grid-column: 1/5;
+    background-color: var(--pantalla);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: right;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 30px;
+}
+#igual{
+grid-row: span 2;
+background-color: #3c1182ce;
+}
+#cero{
+grid-column: span 2}
+.uwu{
+    background-color: #3c1182ce;
+}
+.boton:hover{
+background-color: rgb(124, 53, 191);
+}
+#igual:hover{
+    background-color: rgb(104, 71, 238);
+    }
+.uwu:hover{
+    background-color: rgb(104, 71, 238);
+        }
